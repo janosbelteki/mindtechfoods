@@ -10,6 +10,7 @@ buildscript {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:2.5.12")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
         classpath("org.jetbrains.kotlin:kotlin-allopen:1.9.22")
+        classpath("org.jetbrains.kotlin:kotlin-noarg:1.9.22")
     }
 }
 
@@ -24,6 +25,7 @@ apply {
     plugin("kotlin-spring")
     plugin("idea")
     plugin("io.spring.dependency-management")
+    plugin("kotlin-jpa")
 }
 
 group = "com.mindtechapps"
